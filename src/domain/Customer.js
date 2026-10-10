@@ -7,6 +7,13 @@ class Customer {
     this.type = type;
     this.address = address;
   }
-}
 
+  getAddressDetails() {
+    return {
+      city: this.address.city,
+      state: this.address.state,
+      region: this.address.region
+    };
+  }
+}
 module.exports = Customer;

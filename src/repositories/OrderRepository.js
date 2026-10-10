@@ -9,8 +9,7 @@ class OrderRepository {
   }
 
   findAll() {
-    return this.orders;
+    return [...this.orders];
   }
 }
-
 module.exports = OrderRepository;
